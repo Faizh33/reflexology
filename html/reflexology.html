@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réflexologue LM - Accueil</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reflexology.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1
+/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div><img src="../images/logo.png" class="logo"/></div>
+    
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="reflexology.html">Réflexologie</a></li>
+            <li><a href="forwho.html">Pour qui?</a></li>
+            <li><a href="mycare.html">Mes soins</a></li>
+            <li><a href="#"><img src="../svg/facebook.svg" /></a></li>
+            <li><a href="#"><img src="../svg/instagram.svg" class="last-item"/></a></li>
+        </ul>
+    
+        <div class="burger-menu">&#9776;</div>
+    </nav>
+    <!-- Bloc principal -->
+    <h1 class="title">Qu'est-ce que la réflexologie?</h1>
+    <div class="presentation-reflexo-container">
+        <img src="../images/reflexo-presentation.png" alt="Présentation de la réflexologie" class="presentation-reflexo" />
+    </div>
+
+    <h2 class="title">La réflexologie plantaire</h2>
+    <div class="details-container">
+        <div class="details-text-container">
+            <p class="details-text">Notre corps est représenté dans nos pieds. La réflexologie plantaire permet de soulager des symptômes liés au stress par la stimulation des points réflexes correspondants.</p>
+        </div>
+        <div class="details-img-container">
+            <img src="../svg/caret-left-fill.svg" class="arrow-left" onclick="toggleImages('img-plantaire1', 'img-plantaire2')" />
+            <img src="../images/reflexologie-plantaire-face-plantaire.jpg" alt="Illustration de la réflexologie plantaire" class="details-img" id="img-plantaire1" style="display:inline-block;" />
+            <img src="../images/reflexologie-plantaire.jpg" alt="Illustration de la réflexologie plantaire" class="details-img" id="img-plantaire2" style="display:none;" />
+            <img src="../svg/caret-right-fill.svg" class="arrow-right" onclick="toggleImages('img-plantaire1', 'img-plantaire2')" />
+        </div>
+    </div>
+
+    <h2 class="title">La réflexologie palmaire</h2>
+    <div class="details-container">
+        <div class="details-text-container">
+            <p class="details-text">La réflexologie palmaire consiste à stimuler des points précis sur les mains. Elle permet notamment de diminuer le stress, l'arthrose ou encore les douleurs. C'est une technique manuelle ancestrale permettant d'utiliser les ressources naturelles de l'organisme.</p>
+        </div>
+        <div class="details-img-container">
+            <img src="../svg/caret-left-fill.svg" class="arrow-left" onclick="toggleImages('img-palmaire1', 'img-palmaire2')" />
+            <img src="../images/reflexologie-palmaire-face-dorsale.jpg" alt="Illustration de la réflexologie palmaire" class="details-img" id="img-palmaire1" style="display:inline-block;" />
+            <img src="../images/reflexologie-palmaire-face-palmaire.jpg" alt="Illustration de la réflexologie palmaire" class="details-img" id="img-palmaire2" style="display:none;" />
+            <img src="../svg/caret-right-fill.svg" class="arrow-right" onclick="toggleImages('img-palmaire1', 'img-palmaire2')" />
+        </div>
+    </div>
+
+    <h2 class="title">La réflexologie faciale "Dien Chan"</h2>
+    <div class="details-container">
+        <div class="row">
+            <div class="details-img-container col-12 col-md-5">
+                <img src="../images/visage.jpg" alt="Illustration de la réflexologie faciale" class="details-visage-img" />
+            </div>
+            <div class="details-text-container col-12 col-md-7">
+                <p class="text details-text-visage">La réflexologie faciale et crânienne est une technique de relaxation manuelle, aux répercussions positives sur l'ensemble du corps. Dien Chan tient à sa capacité à soigner très rapidement tous types de pathologies tels que les troubles nerveux, les douleurs articulaires ou encore les problèmes digestifs.Le visage est utilisé comme une cartographie du corps tout entier. À la différence de l'acupuncture, le "Dien Chan" se pratique sans aiguilles.La réflexologie stimule les points douloureux avec les doigts ou des outils spécifiques.</p>
+            </div>
+        </div>
+        <div class="details-img-container">
+            <img src="../images/dien-chan-visage.png" alt="Illustration de la réfléxologie faciale" class="details-visage-img" />
+        </div>
+    </div>
+
+    <h2 class="title">L'auriculothérapie</h2>
+    <div class="details-container">
+        <div class="details-text-container">
+            <p class="details-text">L’auriculothérapie consiste à stimuler des points dits “zones réflexes” de l’oreille externe afin de soulager les dysfonctionnements de l’organisme pour retrouver un équilibre intérieur. L’auriculothérapie repose sur la notion que le foetus est représenté dans l’oreille. Une séance complète d’auriculothérapie dure 15 minutes.</p>
+        </div>
+        <div class="row details-img-container">
+            <div class="col-4">
+                <img src="../images/oreille-foetus.png" alt="Illustration de la réflexologie auriculaire" class="details-img-ear" />
+            </div>
+            <div class="col-8">
+                <img src="../images/oreille.png" alt="Illustration de la réflexologie auriculaire" class="details-img-ear" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="row">
+            <div class="col-12 col-md-4 footer-item">
+                <ul class="footer-links">
+                    <li><a href="charte-deontologie.html">Charte de déontologie</a></li>
+                    <li><a href="mycare.html">Contact</a></li>
+                    <li><a href="#">Mentions Légales</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 footer-item">
+                <img src="../images/logo.png" class="logo" />
+            </div>
+            <div class="col-12 col-md-4 footer-item">
+                <p>13 Allée Marc Oraison<br>33370 SALLEBOEUF<br><br>07.45.03.18.38</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>
