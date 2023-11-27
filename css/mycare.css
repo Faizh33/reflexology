@@ -1,0 +1,62 @@
+/* Style pages mes soins */
+.tarif-table {
+    width: 100%;
+    margin-left: 5%;
+}
+
+.tarif-table td {
+    height: 75px;
+}
+
+@media screen and (min-width: 700px) {
+    .tarif-table {
+        width: 60%;
+        margin-left: 10%;
+    }
+}
+
+/* Style du formulaire de contact */
+.contact-form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid #BD590F;
+    border-radius: 50px;
+    padding: 30px;
+    background-color: #F4EBE5;
+    margin-bottom: 50px;
+}
+
+.form-input, .form-textarea {
+    border: none;
+    padding-left: 30px;
+}
+
+.form-input {
+    height: 40px;
+    border-radius: 50px;
+}
+
+.form-textarea {
+    height: 150px;
+    padding-top: 10px;
+    border-radius: 25px;
+}
+
+.label {
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    .contact-form {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .contact-form {
+        width: 30%;
+    }
+}

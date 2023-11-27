@@ -1,0 +1,85 @@
+/* Style de la page "Réflexologie" */ 
+.presentation-reflexo-container {
+    display: flex;
+}
+
+.presentation-reflexo {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 90%;
+}
+.details-container {
+    width: 97%;
+    margin: 0 auto;
+    border: 5px solid #BD590F;
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px #411e0256;
+    background-color: #f4ebe572;
+    margin-bottom: 30px;
+}
+
+.details-text-container {
+    font-size: 18px;
+}
+
+.details-img-container {
+    display: flex;
+    align-items: center;
+}
+
+.details-text-visage {
+    padding: 20px;
+}
+
+.details-text {
+    padding : 20px 20px 0 20px;
+}
+
+.details-img {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.details-visage-img {
+    width: 100%;
+    margin: auto;
+    border-radius: 50px;
+    padding: 0px 10px 10px 10px;
+}
+
+.details-img-ear {
+    padding: 0px 10px 10px 10px;
+    margin: auto;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.arrow-right, .arrow-left {
+    width: 12vw;
+    height: 24vh;
+}
+
+.arrow-right:hover, .arrow-left:hover {
+    opacity: 75%;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    .presentation-reflexo {
+        width: 60%;
+    }
+
+    .details-container {
+        width: 60%;
+    }
+
+    .details-text-visage {
+        padding: 10px 20px 0 0;
+    }
+
+    .arrow-right, .arrow-left {
+        width: 7vw;
+        height: 14vh;
+    }
+}

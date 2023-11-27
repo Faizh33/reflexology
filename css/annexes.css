@@ -1,0 +1,61 @@
+/* Style charte de deontologie */
+.ffr-logo-container {
+    display: flex;
+}
+
+.ffr-logo {
+    width: 100px;
+    margin: auto;
+}
+
+.deontologie-container {
+    width: 80%;
+    margin: auto;
+}
+
+.deontology-ul {
+    padding-left: 4rem;
+    list-style-type: none;
+  }
+
+.deontologie-article {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.li-text::before {
+    content: "\058D"; 
+    color: #BD590F;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 20px;
+}
+
+.li-text {
+    margin-bottom: 20px;
+}
+
+.logo-ecole-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10vw;
+}
+
+/* Style mes certifications */
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.diplome-img {
+    width: 90vw;
+}
+
+@media screen and (min-width: 700px) {
+    .diplome-img {
+        width: 70vw;
+    }
+}

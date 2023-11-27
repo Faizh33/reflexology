@@ -1,0 +1,212 @@
+/* Style de la page "Pour qui?" */
+.bubbles-container {
+    position: relative;
+    width : 98vw;
+    height: 205vh;
+}
+
+.bubble {
+    background-color: #F4EBE5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bble-1 {
+    border: 10px solid #BD590F;
+    box-shadow : 10px 10px 10px gray;
+}
+
+.bble-2 {
+    border: 10px solid #5D2F03;
+    box-shadow : 10px 10px 10px gray;
+}
+
+.bubble-title-1, .bubble-title-2 {
+    font-size: 5vw;
+}
+
+.bubble-title-1 {
+    color: #5D2F03;
+}
+
+.bubble-title-2 {
+    color: #BD590F;
+}
+
+.bubble-title-1, .bubble-title-2, .bubble-text {
+    text-align: center;
+}
+
+.bubble-text {
+    margin: 5% 12% 0% 12%;
+    font-size: 3vw;
+}
+
+.bb1 {
+    width: 94vw;
+    height: 48vh;
+    left: 3vw;
+}
+
+.bb2 {
+    width: 60vw;
+    height: 30vh;
+    left: 35vw;
+    top: 49vh;
+}
+
+.bb3 {
+    width: 70vw;
+    height: 35vh;
+    left: 5vw;
+    top: 78vh;
+}
+
+.bb4 {
+    width: 60vw;
+    height: 30vh;
+    top: 113vh;
+    left: 35vw;
+}
+
+.bb5 {
+    width: 60vw;
+    height: 30vh;
+    top: 140vh;
+    left: 3vw;
+}
+
+.bb6 {
+    width: 70vw;
+    height: 35vh;
+    left: 25vw;
+    top: 169vh;
+}
+
+.enterprise-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 20px 50px 0;
+}
+
+
+/* Bulles version desktop largeur > 500 px*/
+@media screen and (min-width : 500px) {
+    .bubble-title-1, .bubble-title-2 {
+        font-size: 4vw;
+    }
+
+    .bubble-text {
+        font-size: 2.5vw;
+    }
+}
+
+
+/* Bulles version desktop largeur > 700 px*/
+@media screen and (min-width : 700px) {
+    .bubbles-container {
+        height: 95vh;
+    }
+
+    .bubble-title-1, .bubble-title-2 {
+        font-size: 3vw;
+    }
+
+    .bubble-text {
+        font-size: 1.2vw;
+    }
+
+    .bb1 {
+        width: 41vw;
+        height: 40vh;
+        left: 3vw;
+    }
+    
+    .bb2 {
+        width: 25vw;
+        height: 24.5vh;
+        left: 45vw;
+        top: 10vh;
+    }
+    
+    .bb3 {
+        width: 31vw;
+        height: 30vh;
+        left: 66vw;
+        top: 27vh;
+    }
+    
+    .bb4 {
+        width: 31.7vw;
+        height: 31vh;
+        top: 41vh;
+        left: 2vw;
+    }
+    
+    .bb5 {
+        width: 32.5vw;
+        height: 32vh;
+        top: 35vh;
+        left: 34vw;
+    }
+    
+    .bb6 {
+        width: 35vw;
+        height: 35vh;
+        left: 60vw;
+        top: 58vh;
+    }
+}
+
+
+/* Bulles version desktop ecran > 1200px */
+@media screen and (min-width : 1200px) {
+    .bubbles-container {
+        height: 175vh;
+    }
+
+    .bb1 {
+        width: 41vw;
+        height: 82vh;
+        left: 3vw;
+    }
+    
+    .bb2 {
+        width: 25vw;
+        height: 50vh;
+        left: 45vw;
+        top: 10vh;
+    }
+    
+    .bb3 {
+        width: 31vw;
+        height: 62vh;
+        left: 65vw;
+        top: 40vh;
+    }
+    
+    .bb4 {
+        width: 31.7vw;
+        height: 63.4vh;
+        top: 83vh;
+        left: 2vw;
+    }
+    
+    .bb5 {
+        width: 32.5vw;
+        height: 65vh;
+        top: 63vh;
+        left: 33.5vw;
+    }
+    
+    .bb6 {
+        width: 35vw;
+        height: 70vh;
+        left: 60vw;
+        top: 104vh;
+    }
+}

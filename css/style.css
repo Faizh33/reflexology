@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama&family=Handlee&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Georama', sans-serif;
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #F4EBE5;
+    color: #5D2F03;
+    height: 150px;
+}
+
+.logo {
+    height: 140px;
+    margin-right: 6vw;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #5D2F03;
+    text-decoration: none;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+}
+
+.last-item {
+    margin-right: 5vw;
+}
+
+.burger-menu {
+    order: 3;
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F4EBE5;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .burger-menu {
+        display: flex;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .last-item {
+        margin-right: 0vw;
+    }
+}
+
+/* Style des titres */
+.main-title {
+    font-family: 'Handlee', cursive;
+    font-size: 11vw;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-style: italic;
+}
+
+@media screen and (min-width: 700px) {
+    .main-title {
+        font-size: 6vw;
+    }
+}
+
+.title {
+    font-weight: bold;
+    font-family: 'Georama', sans-serif;
+    color:#5D2F03;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+/* Style des textes */
+.text {
+    font-family: 'Georama', sans-serif;
+}
+
+.text-block {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 70%;
+    margin: auto;
+}
+
+.color-text1 {
+    color:#BD590F;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.color-text2 {
+    color:#5D2F03;
+    font-weight: bold;
+}
+
+/* Style des boutons */
+.button {
+    border: 1px solid #5D2F03;
+    border-radius: 50px;
+    padding: 6px;
+    background-color: #5D2F03;
+    width: 40%;
+    margin:auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.button-link, .button-link:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Style du footer */
+.footer {
+    margin-top: 50px;
+    padding: 5vh;
+    background-color: #F4EBE5;
+}
+
+.footer-links {
+    list-style: none;
+    font-family: 'Handlee', cursive;
+    font-size: 16px;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item p {
+    color:#5D2F03;
+    font-family: 'Handlee', cursive;
+}
+
+.footer-links a {
+    color:#5D2F03;
+}
+
+.footer-links a:hover {
+    color:#5D2F03;
+    text-decoration: none;
+}
+
+.footer-img {
+    padding: 10px;
+}
+
+/* Correction de style injecté par bootstrap */
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
