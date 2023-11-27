@@ -59,3 +59,16 @@
         width: 70vw;
     }
 }
+
+/* Style de la politique de confidentialité/mentions légales */
+.text-container {
+    width: 80vw;
+    margin: auto;
+}
+
+@media screen and (min-width: 700px) {
+    .text-container {
+        width: 70vw;
+        margin: auto;
+    }
+}
