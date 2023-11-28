@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réflexologue LM - Mes soins</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mycare.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1
-/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
     <!-- Navbar -->
@@ -20,8 +20,8 @@
             <li><a href="reflexology.html">Réflexologie</a></li>
             <li><a href="forwho.html">Pour qui?</a></li>
             <li><a href="mycare.html">Mes soins</a></li>
-            <li><a href="#"><img src="../svg/facebook.svg" /></a></li>
-            <li><a href="#"><img src="../svg/instagram.svg" class="last-item"/></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100092371766105" target="_blank"><img src="../svg/facebook.svg" /></a></li>
+            <li><a href="https://instagram.com/reflexologielm?utm_source=qr" target="_blank"><img src="../svg/instagram.svg" class="last-item"/></a></li>
         </ul>
         <div class="burger-menu">&#9776;</div>
     </nav>
@@ -39,9 +39,9 @@
         <p class="text">Je vous propose plusieurs formules en fonction de vos attente. Vous êtes acteurs de votre soin. Réfractaire à la réfléxologie plantaire, je vous propose d’autres reflexologies qui peuvent être aussi efficaces.</p>
         <p class="text"><br><span class=" color-text1"><strong><u>Formule détente/ bien être</u></strong></span><br><br>Comme le nom l’indique, la séance permet de vous détendre afin de réduire votre stress et d’agir efficacement sur votre sommeil. Je propose plusieurs réflexologies :<br></p>
         <ul>
-            <li class="text color-text2">Faciale-Plantaire</li>
-            <li class="text color-text2">ou Faciale-Palmaire</li>
-            <li class="text color-text2">ou Auriculaire-faciale</li>
+            <li class="text color-text2 label">Faciale-Plantaire</li>
+            <li class="text color-text2 label">ou Faciale-Palmaire</li>
+            <li class="text color-text2 label">ou Auriculaire-faciale</li>
         </ul>
         <p class="text">Une séance dure environ 45mn.</p>
         <p class="text"><br><span class="color-text1"><strong><u>Formule Thérapeutique</u></strong></span><br><br>La séance permet de soulager un trouble fonctionnel de votre organisme</p>
@@ -57,15 +57,15 @@
         <p class="text"><br><span class="color-text1"><strong><u>Tarifs</u></strong></span></p>
         <table class="tarif-table">
             <tr>
-                <td class="text color-text2"><b>Formule détente/bien-être</b></td>
+                <td class="text color-text2 label"><b>Formule détente/bien-être</b></td>
                 <td class="text">50€</td>
             </tr>
             <tr>
-                <td class="text color-text2"><b>Formule Thérapeutique</b></td>
+                <td class="text color-text2 label"><b>Formule Thérapeutique</b></td>
                 <td class="text">45€<br>les 3 séances à 120€</td>
             </tr>
             <tr>
-                <td class="text color-text2"><b>Frais de déplacement</b></td>
+                <td class="text color-text2 label"><b>Frais de déplacement</b></td>
                 <td class="text">< 10km = + 5€<br>entre 10km et 20km = + 10€<br>> 20km = + 15€</td>
             </tr>
         </table>
@@ -73,16 +73,16 @@
 
     <!-- Formulaire de contact -->
     <h2 class="title">Contactez-moi</h2>
-    <form class="contact-form">
-        <label for="name" class="text color-text2">Nom et Prénom</label>
-        <input type="text" id="name" class="form-input" />
-        <label for="email" class="text color-text2">Adresse Email</label>
-        <input type="text" id="email" class="form-input" />
-        <label for="subject" class="text color-text2">Sujet</label>
-        <input type="text" id="subject" class="form-input" />
-        <label for="comment" class="text color-text2">Commentaire</label>
-        <textarea id="comment" class="form-textarea"></textarea>
-        <input type="submit" class="button button-link" value="Envoyer" />
+    <form method="post" action="../contact.php" class="contact-form">
+        <label for="name" class="text color-text2 label">Nom et Prénom</label>
+        <input type="text" id="name" name="name" class="form-input" />
+        <label for="email" class="text color-text2 label">Adresse Email</label>
+        <input type="text" id="email" name="email" class="form-input" />
+        <label for="subject" class="text color-text2 label">Sujet</label>
+        <input type="text" id="subject" name="subject" class="form-input" />
+        <label for="comment" class="text color-text2 label">Commentaire</label>
+        <textarea id="comment" name="comment" class="form-textarea"></textarea>
+        <input type="submit" class="button button-link" name="envoyer" value="Envoyer" />
     </form>
 
     <!-- Footer -->
@@ -92,8 +92,9 @@
                 <ul class="footer-links">
                     <li><a href="charte-deontologie.html">Charte de déontologie</a></li>
                     <li><a href="mycare.html">Contact</a></li>
-                    <li><a href="#">Mentions Légales</a></li>
-                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="legal-notice.html">Mentions Légales</a></li>
+                    <li><a href="privacy-policy.html">Politique de confidentialité</a></li>
+                    <li><a href="diplome.html">Mes certifications</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-4 footer-item">
