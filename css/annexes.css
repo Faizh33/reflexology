@@ -8,17 +8,17 @@
     margin: auto;
 }
 
-.deontologie-container {
+.text-container {
     width: 80%;
     margin: auto;
 }
 
-.deontology-ul {
+.annexes-ul {
     padding-left: 4rem;
     list-style-type: none;
   }
 
-.deontologie-article {
+.article {
     margin-bottom: 20px;
     margin-top: 50px;
 }
@@ -58,12 +58,6 @@
     .diplome-img {
         width: 70vw;
     }
-}
-
-/* Style de la politique de confidentialité/mentions légales */
-.text-container {
-    width: 80vw;
-    margin: auto;
 }
 
 @media screen and (min-width: 700px) {
