@@ -197,11 +197,11 @@ body {
     font-family: 'Handlee', cursive;
 }
 
-.footer-links a {
+.footer-links a , .phone-link, .mail-link {
     color:#5D2F03;
 }
 
-.footer-links a:hover {
+.footer-links a:hover, .phone-link:hover, .mail-link:hover {
     color:#5D2F03;
     text-decoration: none;
 }
