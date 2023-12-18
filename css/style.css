@@ -152,6 +152,26 @@ body {
     font-weight: bold;
 }
 
+/*Style des "boîtes" */
+.box {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border: 5px solid #BD590F;
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px #411e0256;
+    margin: auto;
+    background-color: #f4ebe572;
+    margin: 30px;
+}
+
+@media screen and (min-width:1025px) {
+    .box {
+        width: 70%;
+    }
+}
+
+
 /* Style des boutons */
 .button {
     border: 1px solid #5D2F03;
