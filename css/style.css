@@ -193,6 +193,17 @@ body {
     justify-content: center;
 }
 
+.reservation-button {
+    border-radius: 50px;
+    padding: 8px;
+    background-color: #BD590F;
+    width: 60%;
+    margin:auto;
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #411e0256;
+}
+
 
 /* Style du footer */
 .footer {
