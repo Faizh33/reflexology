@@ -39,3 +39,14 @@ iframe {
     font-size: 15px;
     padding-top: 15px;
 }
+
+.reservation-button {
+    border-radius: 50px;
+    padding: 6px;
+    background-color: #BD590F;
+    width: 60%;
+    margin:auto;
+    margin-top: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 5px #411e0256;
+}
