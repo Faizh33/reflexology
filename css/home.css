@@ -1,4 +1,23 @@
 /*Style de la page principale*/
+.box {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border: 5px solid #BD590F;
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px #411e0256;
+    margin: auto;
+    background-color: #f4ebe572;
+    margin: 30px;
+    margin-bottom: 80px;
+}
+
+@media screen and (min-width:1025px) {
+    .box {
+        width: 70%;
+    }
+}
+
 iframe {
     width: 90%;
 }
@@ -7,6 +26,7 @@ iframe {
     width: 100%;
     border-radius: 50px;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .presentation-text {
