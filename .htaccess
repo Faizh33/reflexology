@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /
+
+# Rediriger vers la page d'accueil (index.html)
+RewriteRule ^$ /index.html [L]
+
+# Réécrire vers les fichiers dans le dossier html sans changer l'URL dans le navigateur
+RewriteRule ^reflexologie$ /reflexology.html [L]
+RewriteRule ^pour-qui$ /forwho.html [L]
+RewriteRule ^mes-soins$ /mycare.html [L]
+RewriteRule ^charte-deontologique$ /charte-deontologie.html [L]
+RewriteRule ^certifications$ /diplome.html [L]
+RewriteRule ^mentions-legales$ /legal-notice.html [L]
+RewriteRule ^politique-de-confidentialite$ /privacy-policy.html [L]
