@@ -15,13 +15,34 @@
     }
 }
 
+/* Style des réservations */
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: 5px solid #BD590F;
+    border-radius: 50px;
+    box-shadow: 10px 5px 5px #411e0256;
+    margin: auto;
+    background-color: #f4ebe572;
+    margin: 30px;
+}
+
+.qrcode-img {
+    width: 90%;
+    height: 90%;
+    margin: 20px;
+}
+
+
 /* Style du formulaire de contact */
 .contact-form {
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    border: 10px solid #BD590F;
+    border: 5px solid #BD590F;
     border-radius: 50px;
     box-shadow: 10px 5px 5px #411e0256;
     padding: 30px;
@@ -50,14 +71,22 @@
     padding-top: 10px;
 }
 
+
+/* Style responsive */
 @media screen and (min-width: 700px) {
-    .contact-form {
+    .contact-form, .box {
         width: 50%;
     }
 }
 
 @media screen and (min-width: 1400px) {
-    .contact-form {
+    .contact-form, .box {
         width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .qrcode-img {
+        display: none;
     }
 }
