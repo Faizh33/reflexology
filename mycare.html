@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mycare.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -87,17 +88,20 @@
 
     <!-- Formulaire de contact -->
     <h2 class="title">Contactez-moi</h2>
-    <form method="post" action="../contact.php" class="contact-form">
+    <form id="contactForm" method="post" action="contact.php" class="contact-form">
         <label for="name" class="text color-text2 label">Nom et Prénom</label>
-        <input type="text" id="name" name="name" class="form-input" />
+        <input type="text" id="name" name="name" class="form-input" required />
         <label for="email" class="text color-text2 label">Adresse Email</label>
-        <input type="text" id="email" name="email" class="form-input" />
+        <input type="text" id="email" name="email" class="form-input" required />
         <label for="subject" class="text color-text2 label">Sujet</label>
-        <input type="text" id="subject" name="subject" class="form-input" />
-        <label for="comment" class="text color-text2 label">Commentaire</label>
-        <textarea id="comment" name="comment" class="form-textarea"></textarea>
+        <input type="text" id="subject" name="subject" class="form-input" required />
+        <label for="comment" class="text color-text2 label">Message</label>
+        <textarea id="comment" name="comment" class="form-textarea" required></textarea>
         <input type="submit" class="button button-link" name="envoyer" value="Envoyer" />
     </form>
+
+    <div id="errorContainer" style="display:none;"></div>
+    <div id="successContainer" style="display:none;">Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.</div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -120,6 +124,7 @@
         </div>
     </footer>
     
-    <script src="../js/script.js"></script>
+    <script src="/js/form.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
