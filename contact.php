@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $comment = clean_input($_POST["comment"]);
     }
 
-    $to = "erika_redon@hotmail.com";
+    $to = "reflexolm@gmail.com";
 
     // Sujet de l'e-mail
     $email_subject = "Nouveau message du formulaire de contact: $subject";
