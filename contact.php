@@ -10,32 +10,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Vérification du nom et prénom
     if (empty($_POST["name"])) {
-        die("Le nom et prénom sont obligatoires.");
+        $errors[] = "Le nom et prénom sont obligatoires.";
     } else {
         $name = clean_input($_POST["name"]);
     }
 
     // Vérification de l'adresse e-mail
     if (empty($_POST["email"])) {
-        die("L'adresse e-mail est obligatoire.");
+        $errors[] = "L'adresse e-mail est obligatoire.";
     } else {
         $email = clean_input($_POST["email"]);
         // Vérifier si c'est une adresse e-mail valide
         if (!preg_match("#^[a-z0-9_-]+((\.[a-z0-9_-]+){1,})?@[a-z0-9_-]+((\.[a-z0-9_-]+){1,})?\.[a-z]{2,}$#i", $_POST['email'])){
-            die("L'adresse e-mail n'est pas valide.");
+            $errors[] = "L'adresse e-mail n'est pas valide.";
         }
     }
 
     // Vérification du sujet
     if (empty($_POST["subject"])) {
-        die("Le sujet est obligatoire.");
+        $errors[] = "Le sujet est obligatoire.";
     } else {
         $subject = clean_input($_POST["subject"]);
     }
 
     // Vérification du commentaire
     if (empty($_POST["comment"])) {
-        die("Le commentaire est obligatoire.");
+        $errors[] = "Le commentaire est obligatoire.";
     } else {
         $comment = clean_input($_POST["comment"]);
     }
@@ -46,10 +46,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_subject = "Nouveau message du formulaire de contact: $subject";
 
     // Corps de l'e-mail
-    $email_body = "Nom et Prénom: $name\n";
-    $email_body .= "Adresse Email: $email\n";
-    $email_body .= "Sujet: $subject\n";
-    $email_body .= "Commentaire:\n$comment";
+    $email_body = "<html><body>";
+    $email_body .= "<p>Nom et Prénom: $name</p>";
+    $email_body .= "<p>Adresse Email: $email</p>";
+    $email_body .= "<p>Sujet: $subject</p>";
+    $email_body .= "<p>Commentaire:<br>$comment</p>";
+    $email_body .= "</body></html>";
 
     // Entêtes de l'e-mail
     $headers = [];
@@ -61,10 +63,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = implode("\r\n", $headers);
 
     // Envoi de l'e-mail
-    mail($to, $email_subject, $email_body, $headers);
+    $mail_success = mail($to, $email_subject, $email_body, $headers);
 
-    // Redirection après l'envoi du formulaire
-    header("Location: mycare.html");
-    exit;
+    // Retourner le succès ou l'échec de l'envoi du courriel
+    echo json_encode(['success' => $mail_success]);
+} else {
+    // Retourner les erreurs sous forme de chaîne JSON
+    echo json_encode(['success' => false, 'errors' => $errors]);
 }
 ?>
