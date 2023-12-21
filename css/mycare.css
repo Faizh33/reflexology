@@ -71,6 +71,21 @@
     padding-top: 10px;
 }
 
+#text-form-container {
+    text-align: center;
+}
+
+#errorContainer, #successContainer {
+    font-weight: bold;
+}
+
+#errorContainer {
+    color: red;
+}
+
+#successContainer {
+    color: green;
+}
 
 /* Style responsive */
 @media screen and (min-width: 700px) {
