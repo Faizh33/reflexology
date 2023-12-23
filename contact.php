@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = [];
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'Content-type: text/html; charset=UTF-8';
-    $headers[] = "From: $to";
+    $headers[] = "From: meriaux.ludivine@hotmail.fr";
     
     // Ajout de sauts de ligne entre chaque headers
     $headers = implode("\r\n", $headers);
